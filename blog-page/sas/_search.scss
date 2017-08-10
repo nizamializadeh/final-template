@@ -1,0 +1,64 @@
+#search{
+$topBarColor:#f5f6f7;
+$topIcon:#8D8D8E;
+$highlightGreen:#53B778;
+@media only screen and (max-width:900px) {
+    .topSearch {
+        display:none !important; 
+    }
+}
+@media only screen and (max-width:540px) {
+    .topInfo {
+        display:none;
+    }
+}
+.topInfo {
+    width:100%;
+    background-color:$topBarColor;
+    display:block;
+    height:48px;
+     .wrapInfo {
+        margin:0 auto;
+        .topSearch {
+        width:35%;
+        display:inline-block; 
+        padding:10px 0px;
+        label {
+            color: $topIcon;
+            i {
+                font-size:17px;
+            }
+          }
+        #topSearch {
+            border:none;
+            &:focus{outline:none};
+            background-color:$topBarColor;
+            width:90%;
+            color:$topIcon;
+            font-size:17px;
+          }
+        }
+        .topContacts {
+            display: flex;
+            align-items: center;
+            .topContactsItem {
+                display:inline-block;
+                padding:10px 30px;
+                margin-right:-5px; 
+                color:$topIcon;
+                cursor: pointer;
+                span {
+                    font-size:17px;
+                }
+                &:hover {
+                    color:$highlightGreen;
+                }
+             
+                &:nth-child(2) {
+                    padding-right:5px;
+                }
+            }
+        }
+    }
+} 
+}
