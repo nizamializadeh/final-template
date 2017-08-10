@@ -1,0 +1,206 @@
+@media only screen and (max-width:900px) {
+    #digital 
+    {
+        .reasons
+        {
+            .reasonsBotWrapper
+            {
+                .leftBox
+                {
+                    width:100% !important;
+                    display:block !important;
+                }
+                .rightBox
+                {
+                    margin-left:0 !important;
+                    width:100% !important;
+                    display:block !important;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:870px) {
+    #digital {
+        .successProgress {
+            height:500px !important;
+        }
+    }
+}
+#digital 
+{
+    .reasons
+    {
+        width:100%;
+        .reasonsTitle
+        {
+            width:80%;
+            margin:0px auto;
+            border-bottom:1px solid $subTitleBotLine; 
+            font-family: 'Roboto', sans-serif;
+            h1 
+            {
+                color:$highlightGreen;
+                font-size:$subTitleFontSize;
+            }
+        }
+        .reasonsBotWrapper
+        {
+            
+            width:80%;
+            margin:20px auto;
+            .leftBox 
+            {
+                vertical-align: top;
+                width: 55%;
+                display:inline-block;
+                .leadTitle
+                {
+                    h1
+                    {
+                        font-size:26px;
+                        color:$fontDarkGrey;
+                    }
+                }
+                .leadsDesc
+                {
+                    p
+                    {
+                        font-size:18px;
+                        color:$topIcon;
+                    }
+                }
+                ul 
+                {
+                    padding-top:20px;
+                    padding-bottom:20px;
+                    padding-left:0;
+                    list-style-type: none;
+                    li {
+                        color:$topIcon;
+                        font-size:18px;
+                        word-spacing:1px;
+                        line-height:35px;
+                    }
+                }
+               >p
+               {
+                   font-size:18px;
+                   color:$topIcon;
+               } 
+            }
+            .rightBox
+            {
+                margin-top:25px;
+                border-top:2px solid $fontDarkGrey;
+                margin-left:50px;
+                vertical-align: top;
+                width:30%;
+                display:inline-block;
+                h1
+                {
+                    font-size:26px;
+                    color:$fontDarkGrey;
+                }
+                form 
+                {
+                    margin-left:25px;
+                    input{
+                        font-size:16px;
+                        width:80.5%;
+                        display:block;   
+                        color:lighten($topIcon,20%);
+                        border-top:none;
+                        border-right:none;
+                        border-left:none;
+                        border-bottom:1.5px solid lighten($topIcon,20%); 
+                        &:focus {
+                            outline:none;
+                        }
+                    }
+                    textarea 
+                    {
+                        width:80.5%;
+                        display:block; 
+                        font-size:16px;  
+                        color:lighten($topIcon,20%);
+                        border-top:none;
+                        border-right:none;
+                        border-left:none;
+                        border-bottom:1.5px solid lighten($topIcon,20%); 
+                        &:focus {
+                            outline:none;
+                        }
+                    }
+                    label 
+                    {
+                        position:relative;
+                        right:23px;
+                        top:27px;
+                        color:$topIcon;
+                    }
+                }
+                button
+                {
+                    margin-top:30px;
+                    width:80%;
+                    border:1px solid $highlightGreen;
+                    background: $highlightGreen;
+                    border-radius: 0px;
+                    padding-top:10px;
+                    padding-bottom:10px;
+                    color:white;
+                    transition:0.3s all ease;
+                    &:hover {
+                        background:white;
+                        color:$highlightGreen;
+                    }
+                }
+            }
+        }
+    }
+    .successProgress
+    {
+        color:white;
+        width:100%;
+        height:276px;
+        background-image: url("../img/digital/success.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        .innerSuccessPanel
+        {
+            padding-top:30px;
+            width:80%;
+            margin:auto;
+            h1 
+            {
+                font-size:26px;
+            }
+            .progressPanel
+            {
+                width:100%;
+                display:block;
+                text-align:center;
+                .successItem
+                {
+                    margin:10px 20px;
+                    display:inline-block;
+                    i
+                    {
+                        font-size:60px;
+                        border-right:1px solid white;
+                        padding-right:20px;
+                    }
+                    .numbers
+                    {
+                        color:$highlightGreen;
+                        padding-left:40px;
+                        font-size:36px;
+                    }
+                }
+            }
+        }
+    }
+}

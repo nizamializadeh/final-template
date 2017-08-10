@@ -1,0 +1,116 @@
+@media only screen and (min-width:940px) and (max-width:1200px) {
+    .centralSliderFrame
+    {
+        height:400px !important;
+        .centralSliderLent
+        {
+            height:400px !important;
+        }
+    }
+}
+@media only screen and (max-width:939px) {
+     .centralSliderFrame
+     {
+         .centralSliderText
+         {
+             width:60% !important;
+         }
+         height:400px !important;
+        .centralSliderLentItem
+        {
+            img 
+            {
+                width:130% !important;
+                height:400px !important;
+            }
+        }
+     }
+    
+}
+#digital 
+{
+    .centralSliderFrame
+    {
+        width:100%;
+        height:550px;
+        border:1px solid black;
+        position:relative;
+        overflow:hidden;
+        .centralSliderText
+        {
+            position:absolute;
+            top:0;
+            color:white;
+            z-index:3;
+            width:40%;
+            padding-left:100px;
+            h2
+            {
+                margin-top:40px;
+                font-size:26px;
+                font-family: 'Roboto', sans-serif;
+            }
+            p 
+            {
+                padding-top:40px;
+                font-size:16px;
+                font-family: 'Roboto', sans-serif;
+            }
+            span 
+            {
+                margin-top:40px;
+                font-size:13px;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+        .centralSliderLent
+        {
+            width:299.99%;
+            height:550px;
+            position:absolute;
+            top:0;
+            z-index: 1;
+            .centralSliderLentItem
+            {
+                width:33.33%;
+                height:100%;
+                display:inline-block;
+                margin-right:-5px;
+                text-align:center;
+                overflow:hidden;
+                img 
+                {
+                    width:100%;
+                   height:100%;
+                }
+            }
+        }
+    }
+    .centralSliderBottomPanel 
+    {
+        width:50%;
+        margin:auto;
+        text-align:center;
+        position:relative;
+        bottom:70px;
+        z-index: 5;
+        .centralSliderButton
+        {
+            display:inline-block;
+            border:2px solid white;
+            border-radius:50%;
+            vertical-align: top;
+            margin:0px 5px;
+            cursor: pointer;
+        }
+        .centralSliderBottomPanelText 
+        {
+            display:block;
+            .centralSliderButtonText 
+            {
+                display:inline-block;
+                margin:0px 25px;
+            }
+        }
+    }
+}

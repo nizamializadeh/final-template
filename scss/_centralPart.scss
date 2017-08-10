@@ -1,0 +1,374 @@
+@media only screen and (max-width:900px) {
+    .servicesProvidedItem {
+        display:block !important;
+        width:90% !important;
+    }
+    .impressivePortfolioItemLeftBox {
+        display:block !important;
+        width:100% !important;
+        padding-right:0 !important;
+        .overLay {
+            width:100% !important;
+        }
+    }
+    .impressivePortfolioItemRightBox {
+        display:block !important;
+        padding-left:0 !important;
+        width:100% !important;
+        .impressivePortfolioItemRightBoxUpper {
+            width:100% !important;
+            .leftImg {
+                width:100% !important;
+                float:none !important;
+                display:block !important;
+                padding-left:0 !important;
+                padding-right:0 !important;
+                padding-top:28px !important;
+                .overLay {
+                    height:calc(100% - 28px) !important;
+                    width:100% !important;
+                    margin-top:28px;
+                }
+            }
+            .rightImg {
+                width:100% !important;
+                float:none !important;
+                display:block !important;
+                padding-left:0 !important;
+                padding-right:0 !important;
+                padding-top:28px !important;
+                .overLay {
+                    height:calc(100% - 28px) !important;
+                    width:100% !important;
+                    margin-top:28px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:901px) and (max-width:1125px) {
+    .impressivePortfolioItemLeftBox {
+        width:31.4% !important;
+    }
+    .overLay {
+        h2 {
+            font-size:14px !important;
+        }
+    }
+}
+@media only screen and (max-width:1100px) {
+    .impressivePortfolioItemRightBoxBottom {
+        padding-top:14px !important;
+    }
+}
+$subTitleFontSize:30px;
+$subTitleBotLine:#E9E9E9;
+$fontDarkGrey:#323A45;
+#digital
+{
+    //services
+    .servicesProvided
+    {
+        width:100%;
+        margin-top:85px;
+        
+        .servicesProvidedTitle
+        {
+            width:80%;
+            margin:0px auto;
+            border-bottom:1px solid $subTitleBotLine; 
+            font-family: 'Roboto', sans-serif;
+            h1 
+            {
+                color:$highlightGreen;
+                font-size:$subTitleFontSize;
+            }
+        }
+        .servicesProvidedBotWrapper
+        {
+            width:80%;
+            margin:0px auto;
+            padding-top:20px;
+            .servicesProvidedItem 
+            {
+                display:inline-block;
+                width:31%;
+                box-sizing: border-box;
+                padding:45px 10px 20px 30px;
+                border-bottom:2px solid $highlightGreen;
+                margin-right:10px;
+                &:hover .servicesProvidedItemIcon i {
+                    color:$highlightGreen !important;
+                }
+                &:hover  .servicesProvidedItemTitle h1 {
+                    color:$highlightGreen !important;
+                }
+                .servicesProvidedItemIcon 
+                {
+                    cursor:pointer;
+                    i 
+                    {
+                        font-size:60px;
+                        font-weight: 100 !important;
+                        color:$fontDarkGrey;
+                        transition: 0.4s all ease;
+                    }
+                }
+                .servicesProvidedItemTitle
+                {
+                    cursor:pointer;
+                    h1
+                    {
+                        font-size:24px;
+                        color:$fontDarkGrey;
+                        font-family: 'Roboto', sans-serif;
+                        transition: 0.4s all ease;
+                    }
+                }
+                .servicesProvidedItemDesc
+                {
+                    p 
+                    {
+                        font-size:18px;
+                        color:$topIcon;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+    //portfolio
+    .impressivePortfolio 
+    {
+        width:100%;
+        margin-top:85px;
+        > button {
+            width:25%;
+            padding:10px;
+            border:1px solid $highlightGreen;
+            background:$highlightGreen;
+            transition:0.3s all ease;
+            margin:40px auto;
+            display:block;
+            border-radius:0px;
+            &:hover {
+                background:white !important;
+                color:$highlightGreen;
+            }
+        }
+        .impressivePortfolioTitle
+        {
+            width:80%;
+            margin:0px auto;
+            border-bottom:1px solid $subTitleBotLine; 
+            font-family: 'Roboto', sans-serif;
+            h1 
+            {
+                color:$highlightGreen;
+                font-size:$subTitleFontSize;
+            }
+        }
+        .impressivePortfolioBotWrapper
+        {
+            width:80%;
+            margin:0px auto;
+            padding-top:40px;
+            .impressivePortfolioItemLeftBox 
+            {
+                position:relative;
+                width:31%;
+                display:inline-block;
+                vertical-align: top;
+                padding:0px 15px;
+                text-align:center;
+                &:hover .overLay {
+                    // display:block !important
+                    transform:scale(1) !important;
+                }
+                img 
+                {
+                    width:100%;
+                }
+                .overLay
+                {
+                    span {
+                        color:white;
+                    }
+                    h2 {
+                        color:white;
+                        font-size:18px;
+                    }
+                    button {
+                        transition:0.3s all ease;
+                        border:1px solid $highlightGreen;
+                        background: $highlightGreen;
+                        border-radius:0px;
+                        &:hover {
+                            background:transparent;
+                        }
+                    }
+                    box-sizing:border-box;
+                    padding:20px;
+                    width:calc(100% - 15px);
+                    height:100%;
+                    background:rgba(0,0,0,0.3);
+                    position:absolute;
+                    top:0;
+                    // display:none;
+                    transition:0.4s all ease;
+                    transform: scale(0);
+                    
+                }
+            }
+            .impressivePortfolioItemRightBox 
+            {
+                width:63.5%;
+                display:inline-block;
+                vertical-align: top;
+                padding:0px 15px;
+                .impressivePortfolioItemRightBoxUpper
+                {
+                    width:100%;
+                    padding-bottom:15px;
+                    .leftImg 
+                    {
+                        position:relative;
+                        width:49%;
+                        float:left;
+                        padding-right:15px;
+                        text-align:center;
+                        &:hover .overLay {
+                            transform:scale(1) !important;
+                        }
+                        img 
+                        {
+                            width:100%;
+                        }
+                        .overLay
+                        {
+                            span {
+                                color:white;
+                            }
+                            h2 {
+                                color:white;
+                                font-size:18px;
+                            }
+                            button {
+                                transition:0.3s all ease;
+                                border:1px solid $highlightGreen;
+                                background: $highlightGreen;
+                                border-radius:0px;
+                                &:hover {
+                                    background:transparent;
+                                }
+                            }
+                            box-sizing:border-box;
+                            padding:20px;
+                            width:calc(100% - 15px);
+                            height:100%;
+                            background:rgba(0,0,0,0.3);
+                            position:absolute;
+                            top:0;
+                            transition:0.4s all ease;
+                            transform: scale(0);
+                            
+                        }
+                    }
+                    .rightImg 
+                    {
+                        position:relative;
+                        width:49%;
+                        float:right;
+                        padding-left:15px;
+                        text-align:center;
+                        &:hover .overLay {
+                            transform:scale(1) !important;
+                        }
+                        img 
+                        {
+                            width:100%;
+                        }
+                        .overLay
+                        {
+                            span {
+                                color:white;
+                            }
+                            h2 {
+                                color:white;
+                                font-size:18px;
+                            }
+                            button {
+                                transition:0.3s all ease;
+                                border:1px solid $highlightGreen;
+                                background: $highlightGreen;
+                                border-radius:0px;
+                                &:hover {
+                                    background:transparent;
+                                }
+                            }
+                            box-sizing:border-box;
+                            padding:20px;
+                            width:calc(100% - 15px);
+                            height:100%;
+                            background:rgba(0,0,0,0.3);
+                            position:absolute;
+                            top:0;
+                            transition:0.4s all ease;
+                            transform: scale(0);
+                            
+                        }
+                    }
+                    
+                    .clearDiv 
+                    {
+                        clear:both;
+                    }
+                }
+                .impressivePortfolioItemRightBoxBottom
+                {
+                    position:relative;
+                    width:100%;
+                    vertical-align: bottom;
+                    padding-top: 15px;
+                    text-align:center;
+                    &:hover .overLay {
+                        transform:scale(1) !important;
+                    }   
+                    img 
+                    {
+                        width:100%;
+                    }
+                    .overLay
+                    {
+                        span {
+                            color:white;
+                        }
+                        h2 {
+                            color:white;
+                            font-size:18px;
+                        }
+                        button {
+                            transition:0.3s all ease;
+                            border:1px solid $highlightGreen;
+                            background: $highlightGreen;
+                            border-radius:0px;
+                            &:hover {
+                                background:transparent;
+                            }
+                        }
+                        box-sizing:border-box;
+                        padding:20px;
+                        width:100%;
+                        height:calc(100% - 15px);
+                        background:rgba(0,0,0,0.3);   
+                        position:absolute;
+                        top:0px;
+                        transition:0.4s all ease;
+                        transform: scale(0);
+                        margin-top:15px;
+                    }
+                }
+            }
+        }
+    }
+}

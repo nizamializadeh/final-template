@@ -1,0 +1,58 @@
+@media only screen and (max-width:1070px) {
+    #digital 
+    {
+        .linksWrapper 
+        {
+            #client5 
+            {
+                display:none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:855px) {
+    #digital 
+    {
+        .linksWrapper 
+        {
+            height:90px !important;
+            .linksItem {
+                line-height:90px !important;
+            }
+            #client4 
+            {
+                display:none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:650px) {
+    #digital 
+    {
+        .linksWrapper 
+        {
+            display:none;
+        }
+    }
+}
+
+#digital 
+{
+    width:100%;
+    .linksWrapper 
+    {
+        width:100%;
+        height:120px; // media screen also should be done
+        background:rgb(245, 246, 247);
+        text-align:center;
+        .linksItem 
+        {
+            display:inline-block;
+            line-height: 120px;
+            margin:0px 20px;
+            cursor:pointer;
+        }
+    }
+}

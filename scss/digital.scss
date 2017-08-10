@@ -1,0 +1,139 @@
+
+body {
+    margin:0;
+}
+@import "topInfo";
+@import "topNav";
+@import "topMovingSlides";
+@import "topLinks";
+@import "centralPart";
+@import "centralSlider";
+@import "reasons";
+// footer sass
+
+.sircle{
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  background: white;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 25px;
+  cursor: pointer;
+  box-shadow: 1px -2px 5px 0px rgba(198, 198, 198, 0.59);
+    i{
+      color: #838383;
+      font-size: 15px;
+      margin-top: 15px;
+    }
+}
+#signUp{
+  min-height: 210px;
+  padding: 53px 0 48px;
+  background: #323a45;
+  width: 100%;
+    h2{
+      font-size: 30px;
+      line-height: 30px;
+      margin: 0px;
+      color: white;
+    }
+    form{
+      padding-top: 50px;
+      padding-bottom: 20px;
+      input{
+        padding: 5px 45px;
+        height: 45px;
+        border: none;
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.42857;
+        color: #555555;
+        border-radius: 0px;
+      }
+      .button{
+        background: #53b778;
+        border-color: #53b778;
+        padding: 15px 20px;
+        letter-spacing: 1px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 200;
+        transition: .3s ease;
+      }.button:hover{
+        background: transparent;
+        color: #53b778;
+        border: 1px solid #53b778;
+        transition: .3s ease;
+      }
+    }
+    p{
+      font-size: 16px;
+      font-weight: 200;
+      margin-top: 80px;
+      margin-bottom: 8px;
+      color: #9d9d9d;
+    }
+}
+footer{
+  width: 100%;
+  min-height: 214px;
+  padding: 58px 0 49px;
+  background: #eaeaea;
+  color: #9d9d9d;
+  img{
+    margin-bottom: 20px;
+  }
+    p{
+      font-size: 13px;
+      font-weight: 400;
+    }
+    h6{
+      color: #606060 !important;
+      font-size: 19px;
+      font-weight: 100;
+    }
+    ul{
+      padding-left: 0px;
+      margin-top: 24px;
+        li{
+          list-style: none;
+          margin-bottom: 10px;
+            a{
+              font-weight: 100;
+              color: #9d9d9d;
+              line-height: 17px;
+              text-decoration: none;
+            }a:hover{
+              text-decoration: none;
+              color: #53b778;
+            }
+        }
+    }
+    .social{
+      padding-left: 0px;
+        li{
+          list-style: none;
+          display: inline-block;
+          width: 32px;
+          height: 32px;
+          background-color: #c6cbd2;
+          margin-right: 10px;
+          border-radius: 100%;
+          text-align: center;
+          transition: .3s ease;
+            a{
+              color:white;
+                i{
+                  margin-top: 9px;
+                }
+            }a:hover{
+              color: white !important;
+            }
+        }li:hover{
+          background-color: #53b778;
+          transition: .3s ease;
+        }
+    }
+}
